@@ -1,0 +1,18 @@
+{
+  "name": "zkpd",
+  "version": "1.0.0",
+  "description": "zero knowledge door on polygon",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "circomlib": "^2.0.2",
+    "circomlibjs": "^0.1.1"
+  }
+}
