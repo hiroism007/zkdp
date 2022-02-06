@@ -38,7 +38,7 @@ template Mkt2Verifier(nLevels) {
 
     n2b.in <== key;
 
-    for (var i=nLevels-1; i>=0; i--) {
+    for (var i=nLevels-1; i != -1; i--) {
         levels[i] = Mkt2VerifierLevel();
         levels[i].sibling <== siblings[i];
         levels[i].selector <== n2b.out[i];

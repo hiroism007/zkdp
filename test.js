@@ -9,15 +9,22 @@ async function main() {
   const F = babyjub.F;
   const hash = poseidon;
 
-  const m = merkelize(F, hash, [11, 22, 33, 44, 55, 66, 77, 88], 3);
+  const m = merkelize(
+    F,
+    hash,
+    [9999, 8888, 7777, 6666, 5555, 4444, 3333, 2222],
+    3
+  );
   const root = m[0];
   const mp = getMerkleProof(m, 2, 3);
 
-  console.log(isMerkleProofValid(F, hash, 2, 33, root, mp));
+  console.log(isMerkleProofValid(F, hash, 2, 7777, root, mp));
+
+  console.log;
 
   const input = {
     key: 2,
-    value: 33,
+    value: 7777,
     root: F.toObject(root).toString(),
     siblings: mp.map((arr) => F.toObject(arr).toString()),
   };

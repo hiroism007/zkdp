@@ -9,8 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-  },
   "dependencies": {
     "circomlib": "^2.0.2",
     "circomlibjs": "^0.1.1"
