@@ -128,7 +128,7 @@ export const Component = (props: Props) => {
                     </FormControl>
                 </Item>
                 <Item>
-                    {props.nft && (
+                    {!props.proofId && props.nft && (
                         <Card
                             sx={{
                                 maxWidth: 345,
@@ -147,7 +147,7 @@ export const Component = (props: Props) => {
                     )}
                 </Item>
                 <Item>
-                    {props.eventId && props.tokenId && (
+                    {!props.proofId && props.eventId && props.tokenId && (
                         <Button
                             variant={'outlined'}
                             fullWidth
