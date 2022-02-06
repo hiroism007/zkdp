@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "jsx": "preserve",
+    "pretty": true,
+    "paths": {
+      "~*": ["./src/*"]
+    },
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "./tools/*"
+  ]
+}
