@@ -7,8 +7,7 @@ import { Event } from '~entity/event'
 import { SelectChangeEvent } from '@mui/material'
 import { NFT } from '~entity/nft'
 import { apiClient } from '~modules/apiClient'
-import { buildInput, makeProof } from '~modules/zk'
-import axios from 'axios'
+import { buildInput } from '~modules/zk'
 import * as proofJSON from '~assets/proof.json'
 import * as publicJSON from '~assets/public.json'
 import { nanoid } from 'nanoid'
@@ -91,7 +90,6 @@ export const Component = () => {
             if (!current) return
             const input = await buildInput(current.tokenIds, tokenId)
             setInput(input)
-            setMessage('Input generated!')
             setSnackOpen(true)
             // TODO because generating proof takes time for presentations,
             // TODO I use already-generated proof for the demo
@@ -113,11 +111,6 @@ export const Component = () => {
                 jsonStr: qrStr
             })
             setProof(id)
-            // const response = await axios.post('http://localhost:8080/verify', {
-            //     proof: proofJSON,
-            //     publicSignals: publicJSON
-            // })
-            // console.log(response.data)
         } catch (e) {
             console.error(e)
             setMessage('Failed to generate the input..')

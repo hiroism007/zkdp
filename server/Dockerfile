@@ -11,8 +11,9 @@ COPY . .
 
 RUN npm install && \
 npm run type-check && \
-npm run eslint:fix && \
 npm run build
+
+COPY ./src/public/ ./dist/public/
 
 # ----------
 # runtime用のstage
@@ -32,5 +33,7 @@ RUN npm install --production --cache /tmp/empty-cache && rm -rf /tmp/empty-cache
 
 # --fromで前半で記述した　AS web と命名した中間イメージから必要なファイルのみ抽出する事ができる(distディレクトリにtsコンパイル結果であるjsファイルが出力されている)
 COPY --from=web /web/dist ./dist
+
+RUN ls ./dist/
 
 CMD [ "npm", "run", "up"]

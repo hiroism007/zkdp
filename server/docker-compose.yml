@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: npm run up
+    environment:
+      NODE_ENV: development
+      PORT: 8080
+    ports:
+      - '8080:8080'

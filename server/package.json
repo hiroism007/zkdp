@@ -12,6 +12,7 @@
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "node-aes-cmac": "^0.1.1",
     "snarkjs": "^0.4.13"
   },
   "devDependencies": {

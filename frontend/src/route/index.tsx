@@ -8,6 +8,7 @@ import { MetaMaskProvider } from '~/providers/MetaMask'
 import * as PrivateRoute from './Private'
 import * as Home from '~/pages/Home'
 import * as Signin from '~/pages/Signin'
+import * as Verify from '~/pages/Verify'
 
 type Props = {
     history: History.History
@@ -23,6 +24,9 @@ export const Route = (props: Props): React.ReactElement => (
                     </PrivateRoute.Route>
                     <ReactRouter.Route exact path="/signin">
                         <Signin.Component />
+                    </ReactRouter.Route>
+                    <ReactRouter.Route exact path="/verify">
+                        <Verify.Component />
                     </ReactRouter.Route>
                 </ReactRouter.Switch>
             </MetaMaskProvider>
