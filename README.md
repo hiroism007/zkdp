@@ -11,3 +11,5 @@ https://www.youtube.com/watch?v=o4WmRJxkER4
 https://zkdp.xyz/
 
 https://showcase.ethglobal.com/roadtoweb3/zkdp
+
+https://docs.google.com/presentation/d/1ijbdZJV2_4c0dZ9NXwEw4rHxZvh0ixHKRyAl3Nj59ro/edit?usp=sharing
