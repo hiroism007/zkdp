@@ -46,7 +46,7 @@ export const Component = (props: Props) => {
                             ✅ Verify your NFT ownership
                         </Typography>
                         <Typography variant="h4" component="div" gutterBottom>
-                            ✅ Generate Zero Kwnoledge Proof
+                            ✅ Generate Zero Knowledge Proof
                         </Typography>
                         <Typography variant="h4" component="div" gutterBottom>
                             ✅ Verify without revealing your wallet

@@ -67,8 +67,8 @@ export const Component = (_props: Props) => {
 
     const headerTitle = 'ZKDP'
     return (
-        <Box sx={{ flexGrow: 1, background: '#00bfff' }}>
-            <AppBar position="sticky" sx={{ background: '#00bfff' }}>
+        <Box sx={{ flexGrow: 1, background: '#8248e5' }}>
+            <AppBar position="sticky" sx={{ background: '#8248e5' }}>
                 <Toolbar>
                     <Typography
                         variant="h6"
