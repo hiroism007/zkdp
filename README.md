@@ -6,7 +6,7 @@ ZKDP is a brand new NFT ticketing service with ZKP technology. You can now join 
 
 # URLs
 
-https://youtu.be/y-hohc8QEME
+https://www.youtube.com/watch?v=o4WmRJxkER4
 
 https://zkdp.xyz/
 
